@@ -216,3 +216,193 @@ AttributeError: 'function' object has no attribute 'tokenizer_name'
 [2025-02-15 13:09:34,305: INFO: common: created directory at: artifacts]
 [2025-02-15 13:09:34,305: INFO: common: created directory at: artifacts/data_transformation]
 [2025-02-15 13:09:37,105: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-15 14:51:49,687: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 16:44:05,594: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 16:44:05,602: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 16:44:05,603: INFO: common: created directory at: artifacts]
+[2025-02-15 16:44:05,604: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 16:46:04,140: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 16:46:04,142: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 16:46:04,144: INFO: common: created directory at: artifacts]
+[2025-02-15 16:46:04,145: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:20:58,539: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:20:58,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:20:58,542: INFO: common: created directory at: artifacts]
+[2025-02-15 17:20:58,543: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:22:07,113: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:22:07,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:22:07,118: INFO: common: created directory at: artifacts]
+[2025-02-15 17:22:07,120: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:23:06,950: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:23:06,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:23:06,953: INFO: common: created directory at: artifacts]
+[2025-02-15 17:23:06,954: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:30:07,674: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 17:30:07,986: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:30:07,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:30:07,986: INFO: common: created directory at: artifacts]
+[2025-02-15 17:30:07,986: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:31:38,234: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 17:31:38,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:31:38,438: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:31:38,439: INFO: common: created directory at: artifacts]
+[2025-02-15 17:31:38,440: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:32:43,889: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 17:32:44,096: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:32:44,101: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:32:44,102: INFO: common: created directory at: artifacts]
+[2025-02-15 17:32:44,102: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:36:29,077: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 17:36:29,274: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:36:29,275: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:36:29,276: INFO: common: created directory at: artifacts]
+[2025-02-15 17:36:29,276: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:42:25,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:42:25,525: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:42:25,528: INFO: common: created directory at: artifacts]
+[2025-02-15 17:42:25,529: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:44:21,769: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:44:21,771: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:44:21,773: INFO: common: created directory at: artifacts]
+[2025-02-15 17:44:21,773: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:49:20,306: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 17:49:20,577: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:49:20,584: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:49:20,584: INFO: common: created directory at: artifacts]
+[2025-02-15 17:49:20,584: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 17:54:36,200: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 17:54:36,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 17:54:36,209: INFO: common: created directory at: artifacts]
+[2025-02-15 17:54:36,209: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 18:00:39,931: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 18:00:39,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 18:00:39,934: INFO: common: created directory at: artifacts]
+[2025-02-15 18:00:39,934: INFO: common: created directory at: artifacts/model_training]
+[2025-02-15 19:11:59,886: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 19:12:00,329: INFO: main: logging is implemented]
+[2025-02-15 19:12:00,331: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:12:00,331: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:12:00,335: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:12:00,335: INFO: common: created directory at: artifacts]
+[2025-02-15 19:12:00,337: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-15 19:12:00,337: INFO: data_ingestion: file already exists artifacts\data_ingestion\data.zip]
+[2025-02-15 19:12:00,406: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\main.py", line 18, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\src\textsummarizer\pipeline\stage_data_ingestion_pipeline.py", line 18, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\src\textsummarizer\components\data_ingestion.py", line 42, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\amitt\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1641, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\amitt\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1695, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2025-02-15 19:22:12,694: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 19:22:12,993: INFO: main: logging is implemented]
+[2025-02-15 19:22:12,993: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:22:12,993: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:22:12,993: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:22:12,993: INFO: common: created directory at: artifacts]
+[2025-02-15 19:22:12,993: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-15 19:22:13,009: INFO: data_ingestion: file already exists artifacts\data_ingestion\data.zip]
+[2025-02-15 19:22:13,058: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\main.py", line 18, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\src\textsummarizer\pipeline\stage_data_ingestion_pipeline.py", line 18, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\src\textsummarizer\components\data_ingestion.py", line 42, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\amitt\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1641, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\amitt\AppData\Local\Programs\Python\Python310\lib\zipfile.py", line 1695, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2025-02-15 19:23:11,260: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 19:23:11,541: INFO: main: logging is implemented]
+[2025-02-15 19:23:11,541: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:23:11,541: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:23:11,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:23:11,541: INFO: common: created directory at: artifacts]
+[2025-02-15 19:23:11,541: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-15 19:23:14,261: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E443:3403CA:793D23:80E91F:67B0B160
+Accept-Ranges: bytes
+Date: Sat, 15 Feb 2025 15:23:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fjr990023-FJR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1739632992.357555,VS0,VE1704
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 504ab52a68fee4b87c7e908a78acdf170fb27fac
+Expires: Sat, 15 Feb 2025 15:28:14 GMT
+Source-Age: 1
+
+]
+[2025-02-15 19:23:14,367: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-15 19:23:14,367: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:23:14,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:23:14,367: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:23:14,367: INFO: common: created directory at: artifacts]
+[2025-02-15 19:23:14,367: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-15 19:23:17,296: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-15 19:23:17,296: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:23:17,297: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-15 19:25:21,643: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-15 19:25:21,935: INFO: main: logging is implemented]
+[2025-02-15 19:25:21,935: INFO: main: stage { STAGE_NAME } initiated]
+[2025-02-15 19:25:21,935: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:25:21,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:25:21,935: INFO: common: created directory at: artifacts]
+[2025-02-15 19:25:21,935: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-15 19:25:22,311: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E443:3403CA:793D23:80E91F:67B0B160
+Accept-Ranges: bytes
+Date: Sat, 15 Feb 2025 15:25:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fjr990033-FJR
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1739633122.289859,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6a3a3544e17f50febdacc4941ea0082a12331cf3
+Expires: Sat, 15 Feb 2025 15:30:22 GMT
+Source-Age: 129
+
+]
+[2025-02-15 19:25:22,405: INFO: main: stage { STAGE_NAME } completed]
+[2025-02-15 19:25:22,405: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-15 19:25:22,405: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:25:22,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-15 19:25:22,405: INFO: common: created directory at: artifacts]
+[2025-02-15 19:25:22,421: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-15 19:25:25,014: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-15 19:25:25,015: INFO: main: stage { STAGE_NAME } initiated]
+[2025-02-15 19:25:25,016: INFO: main: stage { STAGE_NAME } completed]
