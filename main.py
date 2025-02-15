@@ -4,6 +4,8 @@ from src.textsummarizer.pipeline.stage_data_ingestion_pipeline import DataIngest
 from src.textsummarizer.pipeline.stage_data_processing_pipeline import DataTransformationpipeline
 from src.textsummarizer.pipeline.stage_model_trainer_pipeline import ModelTrainerpipeline
 
+from src.textsummarizer.pipeline.stage_model_evaluation_pipeline import ModelEvaluationpipeline
+
 logger.info("logging is implemented")
 
 
@@ -62,3 +64,21 @@ except Exception as e:
 
     raise e
 
+STAGE_NAME = "Model Evaluation Stage"
+
+
+try:
+
+    logger.info("stage { STAGE_NAME } initiated")
+
+    model_evalaution_pipeline = ModelEvaluationpipeline()
+
+    model_evalaution_pipeline.initiate_model_evaluate()
+
+    logger.info("stage { STAGE_NAME } completed")
+
+except Exception as e:
+
+    logger.exception(e)
+
+    raise e
