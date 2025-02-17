@@ -6,13 +6,13 @@ The Text Summarization Tool is a powerful application that uses the google/pegas
 
 ### Features
 
-    State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks. (`-`)
+    - State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks.
 
-    User-Friendly Interface: A clean and intuitive web interface with an input text box and a summary output box.
+    - User-Friendly Interface: A clean and intuitive web interface with an input text box and a summary output box.
     
-    Fast and Efficient: Summarizes text in real-time with minimal latency.
+    - Fast and Efficient: Summarizes text in real-time with minimal latency.
     
-    Customizable: Easily extendable for additional features or integration with other tools.
+    - Customizable: Easily extendable for additional features or integration with other tools.
 
 ### How It Works
     The tool uses the Pegasus model, which is a transformer-based Seq2Seq model pre-trained on large datasets and fine-tuned for summarization tasks. The model takes in a long text input and generates a concise       summary by identifying the most important information.
