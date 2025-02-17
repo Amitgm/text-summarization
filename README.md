@@ -42,7 +42,7 @@ Follow these steps to set up the Text Summarization Tool on your local machine.
 - pip (Python package manager)
 
 ### Steps
-- #### Clone the Repository
+#### Clone the Repository
     git clone https://github.com/your-username/text-summarization-tool.git
 
 
