@@ -6,8 +6,8 @@ The text-summarization tool uses the Google pegasus model to summarize texts. It
 The model is finetuned on certain data and the predictions are made from the fine-tuned model. 
 
 <div align="center">
-    <img src="./Images/text-summarization.png" alt="Summarization Results" width="500">
-    <p><em>Traffic Signs.</em></p>
+    <img src="./Images/text-summarization.png" alt="Summarization Results" width="1200">
+    <p><em>Text Summarizer.</em></p>
 </div>
 
 
