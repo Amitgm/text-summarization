@@ -8,6 +8,30 @@ The ML-Ops Pipeline for the Text Summarization Tool is a robust and scalable wor
 
 The first stage involves collecting and preparing the raw data required for training and fine-tuning the model.
 
+#### Data Preprocessing
+
+Raw data is cleaned, transformed, and prepared for training the model.
+
+- Text Cleaning: Remove unnecessary characters, stopwords, and special symbols.
+
+- Tokenization: Split the text into tokens (words or subwords) for model input.
+
+- Dataset Splitting: Divide the data into training, validation, and test sets (e.g., 80% training, 10% validation, 10% testing).
+
+####  Model Training
+
+- Model Selection: Choose the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model optimized for summarization tasks.
+
+- Fine-Tuning: Fine-tune the model on the preprocessed dataset to adapt it to the specific summarization task.
+
+- Hyperparameter Tuning: Experiment with hyperparameters (e.g., learning rate, batch size, epochs) to optimize model performance.
+
+#### Model Evaluation
+
+- The trained model is evaluated to ensure it meets the desired performance metrics.
+
+
+
 ## Features
 
 - State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks.
