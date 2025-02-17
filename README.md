@@ -2,8 +2,19 @@
 
 # TEXT-SUMMARIZATION TOOL
 
-The text-summarization tool uses the Google pegasus model to summarize texts. It is a SeqtoSeq model that takes in the input text and ouputs the summary of the text.
-The model is finetuned on certain data and the predictions are made from the fine-tuned model. 
+The Text Summarization Tool is a powerful application that uses the google/pegasus-cnn_dailymail model to generate concise and accurate summaries of input texts. Built with Flask and Python, this tool leverages a fine-tuned Seq2Seq model to provide high-quality summaries for long articles, documents, or any text input.
+
+### Features
+State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks.
+
+User-Friendly Interface: A clean and intuitive web interface with an input text box and a summary output box.
+
+Fast and Efficient: Summarizes text in real-time with minimal latency.
+
+Customizable: Easily extendable for additional features or integration with other tools.
+
+How It Works
+The tool uses the Pegasus model, which is a transformer-based Seq2Seq model pre-trained on large datasets and fine-tuned for summarization tasks. The model takes in a long text input and generates a concise summary by identifying the most important information.
 
 <div align="center">
     <img src="./Images/text-summarization.png" alt="Summarization Results" width="1200">
