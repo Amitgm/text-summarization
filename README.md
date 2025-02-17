@@ -1,5 +1,15 @@
 # text-summarization using Hugginng face
 
+# TEXT-SUMMARIZATION TOOL
+
+The text-summarization tool uses the Google pegasus model to summarize texts. It is a SeqtoSeq model that takes in the input text and ouputs the summary of the text.
+The model is finetuned on certain data and the predictions are made from the fine-tuned model. 
+
+
+
+
+
+
 ### Define the workflows
 
 1. config.yaml
