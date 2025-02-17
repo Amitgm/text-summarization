@@ -1,4 +1,4 @@
 myenv/
-artifacts/
+artifacts
 pegasus-samsum-model/
 tokenizer_new/

@@ -1,44 +1,48 @@
-from fastapi import FastAPI
-import uvicorn
-import sys
+from flask import Flask, redirect, render_template, request, jsonify
 import os
-from fastapi.templating import Jinja2Templates
-from starlette.responses import RedirectResponse
-from fastapi.responses import Response
+import sys
 from src.textsummarizer.pipeline.prediction_pipeline import PredictionPipeline
 
-text = "what is text summarization"
+app = Flask(__name__)
 
-app = FastAPI()
+# Home route
+# @app.route("/")
+# def index():
+#     return redirect("/docs")
 
-@app.get("/",tags=["authentication"])
-async def index():
+# Mock docs route (you can replace this with actual API documentation)
+# @app.route("/docs")
+# def docs():
+#     return render_template("docs.html")
 
-    return RedirectResponse(url="/docs")
 
-@app.get("/train")
-async def training():
+@app.route("/")
+def index():
+    return redirect("/predict")
 
+# Training route
+@app.route("/train", methods=["GET"])
+def training():
     try:
         os.system("python main.py")
-
+        return jsonify({"message": "Training completed successfully!"}), 200
     except Exception as e:
-        print(f"Error while training: {e}")
-        return Response(status_code=500, content=f"Error while training: {str(e)}")
-    
+        return jsonify({"error": f"Error while training: {str(e)}"}), 500
 
-@app.post("/predict")
-async def predict_route(text):
+# Prediction route\
+@app.route("/predict", methods=["GET", "POST"])
+def predict_route():
+    summary = None
+    if request.method == "POST":
+        try:
+            text = request.form.get("text", "")
+            pipeline = PredictionPipeline()
+            summary = pipeline.predict(text)
+        except Exception as e:
+            summary = f"Error: {str(e)}"
+    return render_template("predict.html", summary=summary)
 
-    try:
-        pipeline = PredictionPipeline()
-        summary = pipeline.predict(text)
-        return {"summary": summary}
-    except Exception as e:
 
-        raise e
-    
 
 if __name__ == "__main__":
-
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    app.run(host="0.0.0.0", port=8080)

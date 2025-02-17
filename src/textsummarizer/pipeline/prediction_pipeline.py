@@ -13,7 +13,7 @@ class PredictionPipeline():
 
         tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
 
-        gen_kwargs = {"length_penalty":0.8, "num_beams":8, "max_length":128}
+        gen_kwargs = {"length_penalty":0.8, "num_beams":20, "max_length":128}
 
         pipe = pipeline("summarization", model= self.config.model_path, tokenizer=tokenizer)
 

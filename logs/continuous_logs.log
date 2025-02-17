@@ -995,3 +995,394 @@ NameError: name 'rr' is not defined
 [2025-02-15 23:27:02,049: INFO: on: Waiting for application shutdown.]
 [2025-02-15 23:27:02,049: INFO: on: Application shutdown complete.]
 [2025-02-15 23:27:02,049: INFO: server: Finished server process [26376]]
+[2025-02-16 22:47:29,444: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:47:29,444: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:47:33,431: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:47:33] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:47:33,470: ERROR: app: Exception on /docs [GET]]
+Traceback (most recent call last):
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\app_new.py", line 16, in docs
+    return render_template("docs.html")
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: docs.html
+[2025-02-16 22:47:33,485: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:47:33] "[35m[1mGET /docs HTTP/1.1[0m" 500 -]
+[2025-02-16 22:47:33,535: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:47:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-02-16 22:49:15,322: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:49:15,322: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:49:17,708: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:49:17] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:49:17,774: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:49:17] "GET /docs HTTP/1.1" 200 -]
+[2025-02-16 22:49:32,619: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:49:32] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:49:32,643: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:49:32] "GET /docs HTTP/1.1" 200 -]
+[2025-02-16 22:50:39,140: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:50:39] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2025-02-16 22:51:07,180: INFO: config: PyTorch version 2.6.0 available.]
+[2025-02-16 22:51:08,482: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:51:08] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2025-02-16 22:51:08,667: INFO: main: logging is implemented]
+[2025-02-16 22:51:08,667: INFO: main: stage { STAGE_NAME } initiated]
+[2025-02-16 22:51:08,677: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 22:51:08,687: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 22:51:08,688: INFO: common: created directory at: artifacts]
+[2025-02-16 22:51:08,688: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-02-16 22:51:08,689: INFO: data_ingestion: file already exists artifacts\data_ingestion\data.zip]
+[2025-02-16 22:51:08,797: INFO: main: stage { STAGE_NAME } completed]
+[2025-02-16 22:51:08,797: INFO: main: stage {STAGE_NAME} initiated]
+[2025-02-16 22:51:08,805: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 22:51:08,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 22:51:08,805: INFO: common: created directory at: artifacts]
+[2025-02-16 22:51:08,805: INFO: common: created directory at: artifacts/data_transformation]
+[2025-02-16 22:51:10,753: INFO: main: stage {STAGE_NAME} completed]
+[2025-02-16 22:51:10,753: INFO: main: stage { STAGE_NAME } initiated]
+[2025-02-16 22:51:10,754: INFO: main: stage { STAGE_NAME } completed]
+[2025-02-16 22:51:10,755: INFO: main: stage { STAGE_NAME } initiated]
+[2025-02-16 22:51:10,759: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 22:51:10,759: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 22:51:10,759: INFO: common: created directory at: artifacts]
+[2025-02-16 22:51:10,759: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-16 22:54:34,352: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:54:34,352: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:54:37,317: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:54:37] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:54:37,361: ERROR: app: Exception on /predict [GET]]
+Traceback (most recent call last):
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\app_new.py", line 43, in predict_route
+    return render_template("predict.html", summary=summary)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: predict.html
+[2025-02-16 22:54:37,376: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:54:37] "[35m[1mGET /predict HTTP/1.1[0m" 500 -]
+[2025-02-16 22:54:42,875: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:54:42] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:54:42,881: ERROR: app: Exception on /predict [GET]]
+Traceback (most recent call last):
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\app_new.py", line 43, in predict_route
+    return render_template("predict.html", summary=summary)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\amitt\Documents\ML-OPS\text-summarization\myenv\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: predict.html
+[2025-02-16 22:54:42,882: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:54:42] "[35m[1mGET /predict HTTP/1.1[0m" 500 -]
+[2025-02-16 22:55:29,159: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:55:29,159: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:55:31,973: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:55:31] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:55:32,020: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:55:32] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:55:46,086: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 22:55:46,090: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 22:55:46,092: INFO: common: created directory at: artifacts]
+[2025-02-16 22:55:46,094: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-16 22:56:00,792: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:56:00] "POST /predict HTTP/1.1" 200 -]
+[2025-02-16 22:57:39,537: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 22:57:39,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 22:57:39,539: INFO: common: created directory at: artifacts]
+[2025-02-16 22:57:39,539: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-16 22:57:53,356: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:57:53] "POST /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:31,517: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:59:31,517: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:59:33,182: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:33] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:59:33,252: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:33] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:42,933: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:42] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:44,004: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:44] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:44,366: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:44] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:44,583: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:44] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 22:59:54,184: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 22:59:54,184: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 22:59:56,697: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:56] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 22:59:56,753: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 22:59:56] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 23:01:29,841: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:01:29] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 23:04:37,278: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-16 23:04:37,278: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-16 23:04:41,608: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:04:41] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 23:04:41,677: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:04:41] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 23:04:43,631: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:04:43] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-16 23:04:43,660: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:04:43] "GET /predict HTTP/1.1" 200 -]
+[2025-02-16 23:05:15,491: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-16 23:05:15,504: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-16 23:05:15,505: INFO: common: created directory at: artifacts]
+[2025-02-16 23:05:15,508: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-16 23:06:01,369: INFO: _internal: 127.0.0.1 - - [16/Feb/2025 23:06:01] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 10:46:51,089: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 10:46:51,104: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 10:46:51,110: INFO: common: created directory at: artifacts]
+[2025-02-17 10:46:51,111: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 10:47:42,307: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 10:47:42,308: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 10:47:46,141: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:47:46] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 10:47:46,253: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:47:46] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 10:47:56,242: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:47:56] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 10:47:56,919: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:47:56] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 10:48:05,122: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 10:48:05,122: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 10:48:08,092: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:48:08] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 10:48:08,134: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:48:08] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 10:55:17,330: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 10:55:17,330: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 10:55:19,827: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:55:19] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 10:55:19,908: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 10:55:19] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 11:46:05,186: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 11:46:05,186: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 11:46:14,356: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 11:46:14] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 11:46:14,426: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 11:46:14] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 11:46:16,703: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 11:46:16] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 11:46:16,743: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 11:46:16] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:05:18,056: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:05:18,056: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:05:22,177: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:05:22] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:05:22,232: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:05:22] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:06:39,690: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:06:39,690: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:06:55,036: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:06:55] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:06:55,109: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:06:55] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:07:44,837: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:07:44,837: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:07:47,114: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:07:47] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:07:47,194: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:07:47] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:18:13,970: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:18:13,970: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:18:16,643: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:18:16] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:18:16,726: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:18:16] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:19:29,195: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:19:29,196: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:19:33,343: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:19:33] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:19:33,408: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:19:33] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:20:32,552: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:20:32,552: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:20:36,023: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:20:36] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:20:36,086: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:20:36] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:20:56,188: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:20:56,188: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:20:59,458: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:20:59] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:20:59,503: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:20:59] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:21:28,687: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:21:28,687: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:21:31,464: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:21:31] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:21:31,491: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:21:31] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:21:58,373: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 12:21:58,373: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 12:22:00,298: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:22:00] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:22:01,561: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:22:01] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:22:01,586: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:22:01] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:22:03,495: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:22:03] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 12:22:03,520: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:22:03] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 12:22:26,004: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 12:22:26,007: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 12:22:26,009: INFO: common: created directory at: artifacts]
+[2025-02-17 12:22:26,011: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 12:23:12,467: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 12:23:12] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:05:35,033: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:05:35,033: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:05:51,451: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:05:51] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:05:51,514: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:05:51] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:05:53,341: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:05:53] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:05:53,374: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:05:53] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:06:21,387: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:06:21,387: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:06:26,916: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:06:26] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:06:26,975: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:06:26] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:07:00,393: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:07:00,393: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:07:02,431: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:07:02] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:07:02,502: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:07:02] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:08:34,778: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:08:34,778: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:08:37,199: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:08:37] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:08:37,252: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:08:37] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:08:39,114: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:08:39] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:08:39,140: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:08:39] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:09:45,663: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:09:45,663: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:09:48,682: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:09:48] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:09:48,759: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:09:48] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:11:29,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:29,160: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:29,161: INFO: common: created directory at: artifacts]
+[2025-02-17 13:11:29,163: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:11:56,254: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:56,259: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:56,269: INFO: common: created directory at: artifacts]
+[2025-02-17 13:11:56,272: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:11:58,670: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:58,722: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:58,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:58,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:58,835: INFO: common: created directory at: artifacts]
+[2025-02-17 13:11:58,937: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:11:58,937: INFO: common: created directory at: artifacts]
+[2025-02-17 13:11:58,956: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:59,066: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:11:59,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:59,259: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:59,263: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:59,270: INFO: common: created directory at: artifacts]
+[2025-02-17 13:11:59,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:59,431: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:11:59,556: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:11:59,556: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:11:59,508: INFO: common: created directory at: artifacts]
+[2025-02-17 13:12:00,065: INFO: common: created directory at: artifacts]
+[2025-02-17 13:12:00,471: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:12:00,482: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:12:00,483: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:12:00,581: INFO: common: created directory at: artifacts]
+[2025-02-17 13:12:00,608: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:12:49,956: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:12:49] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:13:49,122: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:13:49] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:20,093: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:20] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:22,261: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:22] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:22,277: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:22] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:24,558: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:24] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:25,211: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:25] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:15:26,398: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:15:26] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:19:38,772: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:19:38,772: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:19:43,373: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:19:43] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:19:43,433: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:19:43] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:20:24,662: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:20:24,669: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:20:24,670: INFO: common: created directory at: artifacts]
+[2025-02-17 13:20:24,670: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:21:29,314: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:21:29] "POST /predict HTTP/1.1" 200 -]
+[2025-02-17 13:25:47,866: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.15:8080]
+[2025-02-17 13:25:47,866: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-02-17 13:25:56,850: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:25:56] "[32mGET / HTTP/1.1[0m" 302 -]
+[2025-02-17 13:25:56,893: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:25:56] "GET /predict HTTP/1.1" 200 -]
+[2025-02-17 13:26:01,321: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-17 13:26:01,322: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-17 13:26:01,323: INFO: common: created directory at: artifacts]
+[2025-02-17 13:26:01,323: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-02-17 13:28:11,747: INFO: _internal: 127.0.0.1 - - [17/Feb/2025 13:28:11] "POST /predict HTTP/1.1" 200 -]
