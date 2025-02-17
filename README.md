@@ -2,6 +2,8 @@
 
 The Text Summarization Tool is a powerful application that uses the google/pegasus-cnn_dailymail model to generate concise and accurate summaries of input texts. Built with Flask and Python, this tool leverages a fine-tuned Seq2Seq model to provide high-quality summaries for long articles, documents, or any text input.
 
+The ML-Ops Pipeline for the Text Summarization Tool is a robust and scalable workflow that ensures the seamless development, deployment, and monitoring of the machine learning model. Below is a detailed breakdown of each stage in the pipeline
+
 ## Features
 
 - State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks.
