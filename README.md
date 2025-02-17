@@ -50,7 +50,7 @@ Raw data is cleaned, transformed, and prepared for training the model.
 
 - Fine-Tuning: Fine-tuned on the cnn_dailymail dataset for optimal summarization performance.
 
-### How It Works
+## How It Works
 
 The tool uses the Pegasus model, which is a transformer-based Seq2Seq model pre-trained on large datasets and fine-tuned for summarization tasks. The model takes in a long text input and generates a concise       summary by identifying the most important information.
 
