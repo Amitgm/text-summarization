@@ -44,11 +44,33 @@ Follow these steps to set up the Text Summarization Tool on your local machine.
 ### Steps
 #### Clone the Repository
     git clone https://github.com/your-username/text-summarization-tool.git
+#### Create a Virtual Environment:
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+#### Install Dependencies
+    pip install -r requirements.txt
+#### Run the Application
+    python app.py
+#### Access the Tool
+Open your browser and navigate to http://127.0.0.1:8080/predict.
 
+### Usage
+#### Input Text
+Enter your text in the input box on the left side of the interface.
+#### Generate Summary
+Click the Summarize button to process the text and wait for a while.
 
+### Technologies Used
 
+- Python: The core programming language used for the backend.
 
+- Flask: A lightweight web framework for building the application.
 
+- Transformers Library: Used to load and run the google/pegasus-cnn_dailymail model.
+
+- HTML/CSS: For the frontend interface.
+
+Enjoy summarizing your texts with the Text Summarization Tool! 🚀
 
 ### Define the workflows
 
