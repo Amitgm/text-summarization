@@ -4,6 +4,10 @@ The Text Summarization Tool is a powerful application that uses the google/pegas
 
 The ML-Ops Pipeline for the Text Summarization Tool is a robust and scalable workflow that ensures the seamless development, deployment, and monitoring of the machine learning model. Below is a detailed breakdown of each stage in the pipeline
 
+#### Data Ingestion
+
+The first stage involves collecting and preparing the raw data required for training and fine-tuning the model.
+
 ## Features
 
 - State-of-the-Art Model: Utilizes the google/pegasus-cnn_dailymail model, a pre-trained Seq2Seq model fine-tuned for summarization tasks.
