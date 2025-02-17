@@ -1,5 +1,3 @@
-# text-summarization using Hugginng face
-
 # TEXT-SUMMARIZATION TOOL
 
 The Text Summarization Tool is a powerful application that uses the google/pegasus-cnn_dailymail model to generate concise and accurate summaries of input texts. Built with Flask and Python, this tool leverages a fine-tuned Seq2Seq model to provide high-quality summaries for long articles, documents, or any text input.
